@@ -355,30 +355,36 @@
           <div><h2>클로드 3형제 이해하기</h2><p>챗 · 데스크탑 · 코드, 뭐가 어떻게 다른가요?</p></div>
         </div>
 
-        <p class="body">지금까지 브라우저에서 <strong>claude.ai</strong>에 접속해 채팅했다면, 여러분은 "클로드 챗" 이용자예요. 같은 클로드지만 <strong>어디서, 어떤 권한으로 만나느냐</strong>에 따라 할 수 있는 일이 완전히 달라집니다. 먼저 세 가지를 구분해 볼게요.</p>
+        <p class="body">지금까지 브라우저에서 <strong>claude.ai</strong>에 접속해 채팅했다면, 여러분은 "클로드 챗" 이용자예요. 여기서 헷갈리기 쉬운 게 하나 있어요 — <strong>"클로드 데스크탑"과 "클로드 코드"는 서로 다른 두 앱이 아니라는 것</strong>. 실제 구조는 이래요.</p>
+
+        <div class="tips">
+          <div class="tipcard"><span class="te">💬</span><h4>클로드 챗 (웹)</h4><p>claude.ai에서 하는 대화. <strong>파일을 직접 만지지는 못해요</strong> — 첨부한 파일만 보고 답할 수 있어요.</p></div>
+          <div class="tipcard"><span class="te">🖥️</span><h4>클로드 데스크탑 (앱)</h4><p>PC에 설치하는 앱인데, 안에 <strong>탭이 3개</strong> 있어요. <b>Chat</b>(웹 챗과 동일) · <b>Cowork</b>(클라우드에서 혼자 돌아가는 백그라운드 작업) · <b>Code</b>(바로 이게 "클로드 코드"예요!)</p></div>
+        </div>
+
+        <div class="note lock"><span class="ic">🔐</span><div><b>핵심: "클로드 코드"는 별도 앱이 아니라 하나의 기능이에요</b><p>클로드 코드는 <strong>파일을 직접 읽고 고치는 능력</strong> 그 자체를 말해요. 이 능력을 쓰는 방법이 두 가지 있을 뿐입니다 — ① 데스크탑 앱의 <b>Code 탭</b>에서, ② 터미널(명령창)에서 <code>claude</code>로. <strong>공식적으로 두 방법은 겉모습만 다르고 완전히 같은 엔진</strong>이 돌아가요 — CLAUDE.md, MCP 연결, 설정까지 전부 공유됩니다. "데스크탑판은 쉬운 맛보기, 터미널판이 진짜"라고 생각하실 수 있는데, <strong>그렇지 않아요</strong>. 데스크탑 Code 탭도 터미널판과 거의 동일하게 강력합니다. 차이는 그래픽 화면(마우스로 diff 보고 클릭)이냐 명령줄(글자로 입력)이냐 뿐이에요.</p></div></div>
 
         <table class="compare">
-          <thead><tr><th>구분</th><th>클로드 챗 (웹)</th><th>클로드 데스크탑</th><th>클로드 코드</th></tr></thead>
+          <thead><tr><th>구분</th><th>대화만 (챗)</th><th>클로드 코드 (파일 작업)</th></tr></thead>
           <tbody>
-            <tr><th>모습</th><td>브라우저에서 채팅</td><td>내 PC에 설치된 앱</td><td><b>내 컴퓨터의 파일을 직접 다루는 AI 비서</b></td></tr>
-            <tr><th>할 수 있는 일</th><td>질문·글쓰기·분석</td><td>챗 + 데스크탑 전용 기능(MCP 연결, 클로드 코드 실행 등)</td><td>파일 읽기·수정, 프로그램 만들기, 명령 실행, 자동화</td></tr>
-            <tr><th>파일 접근</th><td>첨부한 파일만</td><td>첨부 + 연결한 도구</td><td><span class="yes">폴더 통째로 접근 가능</span></td></tr>
-            <tr><th>결과물</th><td>채팅창 속 텍스트 (복사·저장은 내 몫)</td><td>챗과 동일 + 아티팩트</td><td><b>내 폴더에 진짜 파일로 저장됨</b></td></tr>
-            <tr><th>쓰는 곳</th><td>어디서나 (모바일 포함)</td><td>PC</td><td>데스크탑 앱 안, 또는 터미널(명령창)</td></tr>
+            <tr><th>어디서</th><td>웹(claude.ai), 또는 데스크탑 앱의 <b>Chat 탭</b></td><td>데스크탑 앱의 <b>Code 탭</b>, 또는 <b>터미널</b> — 기능은 사실상 동일</td></tr>
+            <tr><th>파일 접근</th><td>첨부한 파일만</td><td><span class="yes">폴더 통째로 접근 가능</span></td></tr>
+            <tr><th>결과물</th><td>채팅창 속 텍스트 (복사·저장은 내 몫)</td><td><b>내 폴더에 진짜 파일로 저장됨</b></td></tr>
+            <tr><th>할 수 있는 일</th><td>질문·글쓰기·분석</td><td>파일 읽기·수정, 프로그램 만들기, 명령 실행, 자동화</td></tr>
           </tbody>
         </table>
 
-        <div class="note info"><span class="ic">ℹ️</span><div><b>비유하자면</b><p>클로드 챗이 "전화 상담원"이라면, 클로드 코드는 <strong>"우리 집에 직접 와서 일해 주는 도우미"</strong>예요. 파일을 열어 보고, 고치고, 새로 만들고, 결과 확인까지 해 줍니다. 챗에서는 "이렇게 하시면 돼요"라는 설명을 들었다면, 코드에서는 "제가 다 해 놨어요"라는 결과를 받아요.</p></div></div>
+        <div class="note info"><span class="ic">ℹ️</span><div><b>비유하자면</b><p>챗이 "전화 상담원"이라면, 클로드 코드는 <strong>"우리 집에 직접 와서 일해 주는 도우미"</strong>예요. 파일을 열어 보고, 고치고, 새로 만들고, 결과 확인까지 해 줍니다. 이 도우미를 태블릿(데스크탑 Code 탭)으로 부르든 전화(터미널)로 부르든, 일하는 방식은 똑같아요.</p></div></div>
 
         <h3><span class="e">🛤️</span>이 가이드의 두 가지 코스</h3>
-        <p class="body">클로드 코드는 같은 프로그램을 <strong>두 가지 방법</strong>으로 쓸 수 있어요. 이 가이드는 두 코스를 모두 다루되, 번호를 다르게 붙여 구분했습니다.</p>
+        <p class="body">그래서 이 가이드는 <strong>같은 클로드 코드를 쓰는 두 가지 방법</strong>을 다뤄요. 번호를 다르게 붙여 구분했습니다.</p>
 
         <div class="tips">
-          <div class="tipcard"><span class="te">🟠</span><h4>1부 — 데스크탑 코스 (D1~D3)</h4><p>클로드 데스크탑 앱 안에서 버튼 클릭으로 클로드 코드를 켜는 방법. <strong>별도 설치가 거의 없어 가장 쉬운 입문 코스</strong>예요. 오늘 처음이라면 여기부터!</p></div>
-          <div class="tipcard"><span class="te">🔵</span><h4>2부 — 터미널 코스 (T1~T5)</h4><p>검은 명령창에서 <code>claude</code>라고 입력해 실행하는 원조 방식. Git·Node.js 설치가 필요하지만 <strong>가장 강력하고 자유로워요</strong>. 1부에 익숙해진 뒤 도전하세요.</p></div>
+          <div class="tipcard"><span class="te">🟠</span><h4>1부 — 데스크탑 코스 (D1~D3)</h4><p>클로드 데스크탑 앱의 <b>Code 탭</b>에서 마우스로 클릭하며 쓰는 방법. <strong>별도 설치가 거의 없어 가장 쉬운 입문 코스</strong>예요. 오늘 처음이라면 여기부터!</p></div>
+          <div class="tipcard"><span class="te">🔵</span><h4>2부 — 터미널 코스 (T1~T5)</h4><p>검은 명령창에서 <code>claude</code>라고 입력해 실행하는 방법. Git·Node.js 설치가 필요하지만, 화면 없이도 빠르고 다른 도구와 조합하기 좋아요. 1부에 익숙해진 뒤 도전하세요.</p></div>
         </div>
 
-        <div class="note tip"><span class="ic">💡</span><div><b>어느 코스로 가야 할까요?</b><p>둘 중 하나만 골라야 하는 건 아니에요. <strong>추천 경로: 1부(D1~D3)로 시작 → 감을 잡은 뒤 2부(T1~T5)로 확장</strong>. 두 방식은 계정·요금제를 공유하니 이중 결제 걱정도 없습니다. 3부(★)는 어느 쪽을 쓰든 공통으로 적용되는 활용편이에요.</p></div></div>
+        <div class="note tip"><span class="ic">💡</span><div><b>어느 코스로 가야 할까요?</b><p>둘 중 하나만 골라야 하는 건 아니에요. <strong>추천 경로: 1부(D1~D3)로 시작 → 감을 잡은 뒤 2부(T1~T5)로 확장</strong>. 같은 계정·요금제를 공유하고, CLAUDE.md·설정도 그대로 이어받으니 이중으로 배우는 게 아니라 <strong>같은 걸 다른 화면으로 한 번 더 연습하는 셈</strong>이에요. 3부(★)는 어느 쪽을 쓰든 공통으로 적용되는 활용편이고요.</p></div></div>
       </section>
 
       <section id="intro2">
