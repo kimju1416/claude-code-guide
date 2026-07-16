@@ -438,8 +438,9 @@
 
         <h3><span class="e">📥</span>다운로드부터 로그인까지</h3>
         <div class="steps">
-          <div class="step"><h4>다운로드 페이지 접속</h4><p>브라우저 주소창에 아래 주소를 입력해요. 클로드 공식 다운로드 페이지가 열립니다.</p></div>
-          <div class="step"><h4>Windows용 설치 파일 받기</h4><p><strong>Download for Windows</strong> 버튼을 눌러요. <code>Claude-Setup-x64.exe</code> 같은 파일이 다운로드 폴더에 저장됩니다. (보통 수십 MB라 금방 받아져요.)</p></div>
+          <div class="step"><h4>다운로드 페이지 접속</h4><p>브라우저 주소창에 아래 주소를 입력해요. "데스크톱에서 Claude를 만나보세요"라는 페이지가 열립니다.</p></div>
+          <div class="step"><h4>Windows 버튼 누르기</h4><p>버튼이 <strong>macOS · Windows · Windows (arm64) · Linux</strong> 이렇게 여러 개 있어요. <strong>대부분의 PC는 그냥 <span style="color:var(--clay-dark)">Windows</span></strong>를 누르면 됩니다. (arm64는 스냅드래곤 같은 ARM 칩을 쓰는 특수한 노트북용이에요. 내 PC가 어느 쪽인지 모르겠다면 아래 확인법을 참고하세요.)</p></div>
+          <div class="step"><h4>내려받은 파일 찾기</h4><p>다운로드 폴더에 <code>Claude-77c938ba…e512785c73.exe</code>처럼 <strong>Claude 뒤에 알 수 없는 영문·숫자가 길게 붙은 파일</strong>이 저장돼요. 이름이 이상해 보여도 <strong>정상</strong>입니다 — 버전마다 이름이 달라지는 방식이라 그래요.</p></div>
           <div class="step"><h4>설치 파일 실행</h4><p>내려받은 파일을 더블클릭해요. "이 앱이 디바이스를 변경하도록 허용하시겠어요?"가 뜨면 <strong>예</strong>를 누릅니다. 혹시 파란 "Windows의 PC 보호" 창이 뜨면 <strong>추가 정보 → 실행</strong>을 누르면 돼요. 설치는 자동으로 진행됩니다.</p></div>
           <div class="step"><h4>로그인</h4><p>설치가 끝나면 클로드 앱이 자동으로 열려요. <strong>기존 claude.ai 계정으로 로그인</strong>합니다. 구글 계정으로 가입했다면 "Continue with Google", 이메일 가입이라면 메일로 온 인증 코드를 입력하면 돼요.</p></div>
           <div class="step"><h4>설치 확인</h4><p>웹에서 쓰던 것과 똑같은 채팅 화면이 뜨면 성공! 시작 메뉴와 작업 표시줄에 클로드 아이콘이 생겼는지도 확인해 보세요. 이제 이 앱이 여러분의 "클로드 본부"가 됩니다.</p></div>
@@ -449,6 +450,8 @@
           <div class="code-top"><span class="label"><span class="dots"><i></i><i></i><i></i></span> 다운로드 주소 (브라우저 주소창에 붙여넣기)</span><button class="copy">복사</button></div>
           <pre><code>https://claude.ai/download</code></pre>
         </div>
+
+        <div class="note tip"><span class="ic">✅</span><div><b>내 PC가 Windows냐 Windows(arm64)냐 헷갈린다면</b><p><kbd>윈도우 키</kbd> + <kbd>Pause</kbd>를 누르거나 <strong>설정 → 시스템 → 정보</strong>를 열어 <strong>"시스템 종류"</strong>를 보세요. <strong>x64 기반 프로세서</strong>라고 적혀 있으면 그냥 <b>Windows</b> 버튼(대부분 여기), <strong>ARM 기반 프로세서</strong>면 <b>Windows (arm64)</b> 버튼이에요.</p></div></div>
 
         <div class="note warn"><span class="ic">⚠️</span><div><b>비슷한 이름에 주의</b><p>반드시 <strong>claude.ai</strong> 공식 페이지에서 받으세요. 검색 광고로 뜨는 가짜 사이트나 출처 불명의 설치 파일은 위험할 수 있어요. 주소창에 직접 입력하는 게 가장 안전합니다.</p></div></div>
 
@@ -615,7 +618,7 @@
 
         <h3><span class="e">📥</span>Git for Windows 설치</h3>
         <div class="steps">
-          <div class="step"><h4>공식 사이트에서 다운로드</h4><p>아래 주소에 접속해 <strong>Download for Windows → 64-bit Git for Windows Setup</strong>을 클릭해요. <code>Git-2.xx.x-64-bit.exe</code> 파일이 받아집니다.</p></div>
+          <div class="step"><h4>공식 사이트에서 다운로드</h4><p>아래 주소에 접속하면 <strong>"Click here to download the latest ... x64 version of Git for Windows"</strong>라는 파란 문장이 보여요. 그걸 클릭하면 끝입니다. (ARM 노트북이라면 아래쪽 <strong>Standalone Installer → Git for Windows/ARM64 Setup</strong>을 고르세요.) <code>Git-2.55.0.3-64-bit.exe</code>처럼 버전 숫자가 붙은 파일이 받아져요 — 숫자는 시기마다 다릅니다.</p></div>
           <div class="step"><h4>설치 파일 실행</h4><p>더블클릭 → "허용하시겠어요?"에 <strong>예</strong>. 라이선스 화면에서 <strong>Next</strong>를 눌러요.</p></div>
           <div class="step"><h4>옵션 화면들 — 거의 다 기본값으로!</h4><p>Git 설치는 옵션 화면이 10개 넘게 나와서 처음엔 겁먹기 쉬워요. <strong>전부 기본값 그대로 Next만 눌러도 전혀 문제없습니다.</strong> 아래 표에 각 화면의 의미를 정리해 뒀으니, 뭘 정하는 건지 궁금할 때만 참고하세요.</p></div>
           <div class="step"><h4>Install → Finish</h4><p>마지막 화면에서 <strong>Install</strong>을 누르고 1~2분 기다리면 끝. Finish 화면의 체크박스(릴리즈 노트 보기)는 해제하고 닫아도 돼요.</p></div>
@@ -645,6 +648,8 @@
           </tbody>
         </table>
 
+        <div class="note info"><span class="ic">ℹ️</span><div><b>표에 없는 화면이 나와도 당황하지 마세요</b><p>Git 버전에 따라 화면 순서가 조금씩 바뀌고, 위 표에 없는 화면(시작 메뉴 폴더 지정, 실험적 기능 등)도 나올 수 있어요. <strong>원칙은 하나 — 모르는 화면은 손대지 말고 Next</strong>. 정말 중요한 건 위 표에서 굵게 표시한 <b>PATH(가운데 옵션)</b> 하나뿐이에요.</p></div></div>
+
         <h3><span class="e">✅</span>설치 확인</h3>
         <p class="body">PowerShell을 <strong>새로 열고</strong>(기존 창은 새 프로그램을 몰라요), 아래 명령을 붙여넣고 <kbd>Enter</kbd>를 눌러 보세요.</p>
         <div class="code">
@@ -670,16 +675,21 @@ git config --global user.email "hong@example.com"</code></pre>
         <p class="body"><strong>Node.js(노드)</strong>는 자바스크립트 프로그램을 내 PC에서 실행하게 해 주는 엔진이에요. 함께 설치되는 <strong>npm</strong>은 "프로그램 자동 설치 도구"인데, 앱스토어의 명령어판이라고 생각하면 됩니다. 클로드 코드를 npm으로 설치·업데이트할 수 있고, 나중에 클로드에게 웹앱을 만들어 달라고 할 때도 계속 쓰여요.</p>
 
         <h3><span class="e">📥</span>설치 절차</h3>
+
+        <div class="note warn"><span class="ic">⚠️</span><div><b>이 페이지, 처음 보면 100% 당황해요 — 미리 알고 가세요</b><p>Node.js 다운로드 페이지는 "큰 초록 버튼 하나"가 아니라 <strong>설치 방식을 고르는 복잡한 화면</strong>이에요. 게다가 기본값이 <strong>Docker</strong>로 맞춰져 있어서, 화면 가운데에 우리와 상관없는 <code>docker pull node:24-alpine</code> 같은 명령어가 잔뜩 보입니다. <strong>그 명령어들은 전부 무시하세요.</strong> 우리가 누를 건 그 아래에 있어요.</p></div></div>
+
         <div class="steps">
-          <div class="step"><h4>공식 사이트 접속</h4><p>아래 주소로 이동하면 초록색 다운로드 버튼이 보여요. <strong>LTS</strong>라고 적힌 버전(Long Term Support, 장기 지원 안정판)을 받으세요. 숫자가 더 큰 "Current"보다 LTS가 초보자에게 안전해요.</p></div>
-          <div class="step"><h4>설치 파일 실행</h4><p><code>node-v22.x.x-x64.msi</code> 같은 파일을 더블클릭 → <strong>Next</strong>. 라이선스 동의(I accept...)에 체크하고 계속 진행해요.</p></div>
+          <div class="step"><h4>다운로드 페이지 접속</h4><p>아래 주소로 이동해요. 맨 위에 <strong>"Node.js® v24.x.x LTS를 Windows 환경에서…"</strong>라고 적힌 문장이 보이면 제대로 온 거예요. (LTS = Long Term Support, 장기 지원 안정판. 초보자는 무조건 LTS입니다.)</p></div>
+          <div class="step"><h4>Docker 명령어는 무시하고 아래로 스크롤</h4><p>가운데 검은 명령어 상자는 건너뛰고 아래로 내려가요. <strong>"또는 x64 아키텍처가 실행 중인 Windows 환경에서 미리 빌드된 Node.js®를 다운로드하세요"</strong>라는 문장을 찾으세요.</p></div>
+          <div class="step"><h4>"Windows 설치 프로그램 (.msi)" 클릭</h4><p>바로 그 아래 <strong>Windows 설치 프로그램 (.msi)</strong> 링크가 우리가 찾던 거예요. 누르면 <code>node-v24.18.0-x64.msi</code>처럼 생긴 파일이 받아집니다. (숫자는 시기마다 달라요.)</p></div>
+          <div class="step"><h4>설치 파일 실행</h4><p>받은 .msi 파일을 더블클릭 → <strong>Next</strong>. 라이선스 동의(I accept...)에 체크하고 계속 진행해요.</p></div>
           <div class="step"><h4>옵션은 모두 기본값</h4><p>설치 경로, 구성요소 모두 그대로 두면 돼요. 중간에 "Automatically install the necessary tools" 체크박스가 보이면 <strong>체크하지 않고</strong> 넘어가도 됩니다 (무거운 개발 도구를 추가로 까는 옵션인데 우리에겐 불필요해요).</p></div>
           <div class="step"><h4>Install → Finish</h4><p>설치 후 열려 있던 PowerShell 창은 닫고 <strong>새로 열어야</strong> node 명령이 인식돼요.</p></div>
         </div>
 
         <div class="code">
-          <div class="code-top"><span class="label"><span class="dots"><i></i><i></i><i></i></span> Node.js 공식 다운로드 주소</span><button class="copy">복사</button></div>
-          <pre><code>https://nodejs.org/ko</code></pre>
+          <div class="code-top"><span class="label"><span class="dots"><i></i><i></i><i></i></span> Node.js 다운로드 페이지 주소</span><button class="copy">복사</button></div>
+          <pre><code>https://nodejs.org/ko/download</code></pre>
         </div>
 
         <h3><span class="e">✅</span>설치 확인</h3>
@@ -688,7 +698,7 @@ git config --global user.email "hong@example.com"</code></pre>
           <pre><code>node -v
 npm -v</code></pre>
         </div>
-        <p class="body">두 줄 모두 <strong>v22.11.0</strong>, <strong>10.9.0</strong> 같은 버전 숫자가 나오면 준비 완료예요. nodejs.org에서 <strong>LTS</strong> 버전을 받았다면 자동으로 <strong>Node.js 22 이상</strong> 조건을 만족해요 (클로드 코드를 npm으로 설치·업데이트하려면 22 이상이 필요합니다).</p>
+        <p class="body">두 줄 모두 <strong>v24.18.0</strong>, <strong>11.16.0</strong> 같은 버전 숫자가 나오면 준비 완료예요 (숫자는 시기마다 다릅니다). nodejs.org에서 <strong>LTS</strong> 버전을 받았다면 자동으로 <strong>Node.js 22 이상</strong> 조건을 만족해요 — 클로드 코드를 npm으로 설치·업데이트하려면 22 이상이 필요한데, 현재 LTS는 24라 넉넉합니다.</p>
 
         <div class="note info"><span class="ic">ℹ️</span><div><b>사실은 선택 사항이에요</b><p>T4의 <strong>방법 A(PowerShell 한 줄 설치, 추천)는 Node.js가 전혀 필요 없어요</strong> — 별도 실행 파일을 바로 설치하는 방식이거든요. Node.js는 <strong>방법 B(npm 설치)</strong>를 쓰고 싶을 때만, 또는 나중에 클로드에게 웹앱을 직접 만들고 실행해 보라고 시킬 때 필요해요. 그래도 활용 범위가 넓어지니 이번 기회에 같이 설치해 두는 걸 추천해요.</p></div></div>
       </section>
@@ -757,7 +767,7 @@ claude</code></pre>
         <h3><span class="e">⌨️</span>꼭 기억할 단축키 4개</h3>
         <div class="tips">
           <div class="tipcard"><span class="te">✋</span><h4><kbd>Esc</kbd> — 멈춰!</h4><p>클로드가 작업 중일 때 <kbd>Esc</kbd>를 누르면 즉시 멈춰요. 방향이 이상하다 싶으면 주저 말고 누르세요. 대화는 그대로 유지되고, 이어서 새 지시를 내리면 됩니다.</p></div>
-          <div class="tipcard"><span class="te">🔄</span><h4><kbd>Shift</kbd>+<kbd>Tab</kbd> — 권한 모드 전환</h4><p>누를 때마다 <strong>일반 → 자동 수락 → 플랜 모드</strong>가 번갈아 켜져요. 플랜 모드는 "실행 전에 계획만 먼저 보여줘" 모드라 큰 작업 전 검토용으로 최고예요.</p></div>
+          <div class="tipcard"><span class="te">🔄</span><h4><kbd>Shift</kbd>+<kbd>Tab</kbd> — 권한 모드 전환</h4><p>누를 때마다 <strong>Manual(기본) → Accept edits → Plan</strong> 순서로 번갈아 켜져요. <a class="link" href="#d3">D3장</a>에서 본 그 세 가지 모드와 같은 거예요. Plan 모드는 큰 작업 전 검토용으로 최고입니다.</p></div>
           <div class="tipcard"><span class="te">⬆️</span><h4><kbd>↑</kbd> — 이전 입력 불러오기</h4><p>방향키 위를 누르면 아까 입력했던 내용이 다시 나타나요. 살짝 고쳐서 다시 보낼 때 편해요.</p></div>
           <div class="tipcard"><span class="te">🚪</span><h4>종료하기</h4><p><code>/exit</code>를 입력하거나 <kbd>Ctrl</kbd>+<kbd>C</kbd>를 두 번 누르면 클로드가 종료되고 일반 터미널로 돌아와요. 대화 기록은 저장되니 안심하세요.</p></div>
         </div>
@@ -769,7 +779,7 @@ claude</code></pre>
           <tbody>
             <tr><th>/</th><td>슬래시 명령어 실행 (기능 메뉴)</td><td><b>/help</b>, <b>/clear</b> — 전체 목록은 <a class="link" href="#u1">★1장</a></td></tr>
             <tr><th>@</th><td>파일 지목하기 (자동완성 지원)</td><td>"<b>@성적.csv</b> 를 요약해 줘" — 파일명 헷갈릴 때 확실해요</td></tr>
-            <tr><th>!</th><td>터미널 명령 직접 실행</td><td><b>!dir</b> — 클로드를 거치지 않고 바로 실행</td></tr>
+            <tr><th>!</th><td>터미널 명령 직접 실행 (셸 모드)</td><td><b>!dir</b> — 클로드의 승인 절차 없이 바로 실행돼요. 결과는 대화에 남고 클로드가 그 결과를 보고 설명까지 해 줍니다</td></tr>
           </tbody>
         </table>
 
