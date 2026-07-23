@@ -501,16 +501,19 @@
         </ul>
 
         <h3><span class="e">🛡️</span>권한(퍼미션) 모드 이해하기</h3>
-        <p class="body">클로드 코드는 파일 수정, 명령 실행처럼 <strong>내 컴퓨터를 바꾸는 작업 전에 항상 확인을 구해요</strong>. 화면 상단에서 아래 세 가지 모드를 바꿀 수 있어요.</p>
+        <p class="body">클로드 코드는 파일 수정, 명령 실행처럼 <strong>내 컴퓨터를 바꾸는 작업 전에 항상 확인을 구해요</strong>. 화면 상단에서 아래 모드를 바꿀 수 있어요.</p>
         <table class="compare">
           <thead><tr><th>모드</th><th>의미</th><th>언제 쓰나요</th></tr></thead>
           <tbody>
             <tr><th>Manual (기본값)</th><td>변경 전 미리보기(diff)를 보여주고, <b>Accept(수락)/Reject(거절)</b>로 하나하나 승인</td><td>기본 선택. 뭘 하는지 보면서 진행</td></tr>
             <tr><th>Accept edits</th><td>파일 수정은 자동 수락 (속도 우선)</td><td>믿을 수 있는 반복 작업, 빠르게 진행하고 싶을 때</td></tr>
             <tr><th>Plan</th><td>파일을 고치지 않고 <b>계획만</b> 먼저 제안</td><td>큰 작업 전에 방향부터 검토하고 싶을 때</td></tr>
+            <tr><th>Auto <span style="font-weight:600;color:var(--ink-soft)">(베타)</span></th><td>파일 읽기처럼 안전한 동작은 알아서 진행하고, <b>진짜 위험한 동작만</b> 확인을 구함</td><td>모드에 익숙해진 뒤, 승인창을 줄이고 빠르게 가고 싶을 때</td></tr>
           </tbody>
         </table>
         <p class="body">Manual 모드에서 특정 변경이 마음에 안 들면 <strong>Reject</strong>를 누르면 되고, 그러면 클로드가 "어떻게 다르게 할까요?"라고 다시 물어봐요. 파일은 여러분이 Accept하기 전까지 절대 바뀌지 않으니 안심하고 눌러 보세요.</p>
+
+        <div class="note info"><span class="ic">ℹ️</span><div><b>새로 생긴 Auto 모드, 처음엔 굳이 안 써도 돼요</b><p>Auto는 아직 <strong>연구 프리뷰(베타)</strong> 단계인 새 모드예요. 파일을 읽거나 검색하는 것처럼 안전한 동작은 클로드가 알아서 진행하고, 파일 삭제·외부 전송처럼 되돌리기 어려운 동작만 여러분에게 물어봐요. 처음이라면 <strong>Manual</strong>로 시작해 클로드가 뭘 하는지 눈으로 확인하는 습관부터 들이고, 익숙해진 뒤 Auto로 넘어가도 늦지 않아요.</p></div></div>
 
         <h3><span class="e">🎯</span>바로 써먹는 활용 예시 — 복사해서 붙여넣으세요</h3>
         <p class="body">아래 예시는 코딩 지식이 전혀 없어도 되는 요청들이에요. 그대로 복사해 입력칸에 붙여넣고, 괄호 부분만 내 상황으로 바꾸면 됩니다.</p>
@@ -767,7 +770,7 @@ claude</code></pre>
         <h3><span class="e">⌨️</span>꼭 기억할 단축키 4개</h3>
         <div class="tips">
           <div class="tipcard"><span class="te">✋</span><h4><kbd>Esc</kbd> — 멈춰!</h4><p>클로드가 작업 중일 때 <kbd>Esc</kbd>를 누르면 즉시 멈춰요. 방향이 이상하다 싶으면 주저 말고 누르세요. 대화는 그대로 유지되고, 이어서 새 지시를 내리면 됩니다.</p></div>
-          <div class="tipcard"><span class="te">🔄</span><h4><kbd>Shift</kbd>+<kbd>Tab</kbd> — 권한 모드 전환</h4><p>누를 때마다 <strong>Manual(기본) → Accept edits → Plan</strong> 순서로 번갈아 켜져요. <a class="link" href="#d3">D3장</a>에서 본 그 세 가지 모드와 같은 거예요. Plan 모드는 큰 작업 전 검토용으로 최고입니다.</p></div>
+          <div class="tipcard"><span class="te">🔄</span><h4><kbd>Shift</kbd>+<kbd>Tab</kbd> — 권한 모드 전환</h4><p>누를 때마다 <strong>Manual(기본) → Accept edits → Plan</strong> 순서로 번갈아 켜져요. <a class="link" href="#d3">D3장</a>에서 본 그 모드들과 같은 거예요. Plan 모드는 큰 작업 전 검토용으로 최고입니다. (베타인 Auto 모드도 있어요 — D3장 참고)</p></div>
           <div class="tipcard"><span class="te">⬆️</span><h4><kbd>↑</kbd> — 이전 입력 불러오기</h4><p>방향키 위를 누르면 아까 입력했던 내용이 다시 나타나요. 살짝 고쳐서 다시 보낼 때 편해요.</p></div>
           <div class="tipcard"><span class="te">🚪</span><h4>종료하기</h4><p><code>/exit</code>를 입력하거나 <kbd>Ctrl</kbd>+<kbd>C</kbd>를 두 번 누르면 클로드가 종료되고 일반 터미널로 돌아와요. 대화 기록은 저장되니 안심하세요.</p></div>
         </div>
@@ -849,7 +852,7 @@ claude auth status    # 현재 로그인 상태 확인</code></pre>
             <tr><th>/init</th><td>현재 폴더를 분석해 <b>CLAUDE.md</b>(작업 규칙 메모장)를 자동 생성</td></tr>
             <tr><th>/clear</th><td>대화 내용 초기화 — 새 주제를 시작할 때 깔끔하게</td></tr>
             <tr><th>/compact</th><td>긴 대화를 요약해 압축 — 대화가 길어져 느려질 때, 사용량 절약</td></tr>
-            <tr><th>/model</th><td>사용할 AI 모델 바꾸기 (빠른 모델 ↔ 똑똑한 모델)</td></tr>
+            <tr><th>/model</th><td>사용할 AI 모델 바꾸기 — 기본은 <b>Sonnet</b>, 더 빠르게는 <b>Haiku</b>, 더 정교하게는 <b>Opus</b>로 (아래 ⑤ 참고)</td></tr>
             <tr><th>/resume</th><td>이전 세션 목록에서 골라 이어하기</td></tr>
             <tr><th>/rewind</th><td>대화·파일을 이전 시점으로 되감기 — 실수했을 때 구원투수</td></tr>
             <tr><th>/memory</th><td>CLAUDE.md 메모리 파일 열어서 편집</td></tr>
@@ -876,6 +879,26 @@ claude auth status    # 현재 로그인 상태 확인</code></pre>
         </div>
 
         <div class="note tip"><span class="ic">💡</span><div><b>다 외울 필요 없어요</b><p>꼭 기억할 건 <strong>/help(도움말), /clear(새 주제), Esc(멈춰)</strong> 세 개뿐. 나머지는 필요할 때 이 페이지에 돌아와 복사해 가세요.</p></div></div>
+
+        <h3><span class="e">🧩</span>⑤ 모델 이름이 헷갈린다면 — 지금 라인업</h3>
+        <p class="body">클로드는 상황에 맞게 여러 "모델"(두뇌 버전) 중 골라 쓸 수 있어요. 이름 뒤 숫자는 계속 올라가니 지금 시점(2026년 하반기) 기준으로 참고하세요. <span class="ic-code">/model</span>을 입력하면 목록에서 바로 고를 수 있습니다.</p>
+        <table class="compare">
+          <thead><tr><th>모델</th><th>특징</th><th>언제 써요</th></tr></thead>
+          <tbody>
+            <tr><th>Haiku</th><td>가장 가볍고 빠름</td><td>간단한 질문, 짧은 반복 작업</td></tr>
+            <tr><th>Sonnet <span style="font-weight:600;color:var(--ink-soft)">(기본값)</span></th><td>속도와 성능의 균형</td><td>지금 기본으로 켜져 있는 모델. 웬만한 작업은 이걸로 충분해요</td></tr>
+            <tr><th>Opus</th><td>가장 정교하고 똑똑함</td><td>복잡한 코드, 긴 문서 분석 등 어려운 일. <span class="ic-code">/fast</span>로 응답 속도를 높이는 옵션도 있어요</td></tr>
+            <tr><th>Fable</th><td>대중에 공개된 가장 강력한 모델</td><td>정말 어려운 문제에 한 번씩 시도해 볼 만해요</td></tr>
+          </tbody>
+        </table>
+        <div class="note tip"><span class="ic">💡</span><div><b>뭘 골라야 할지 모르겠다면</b><p>그냥 기본값(Sonnet)을 쓰세요. 대부분의 학교 업무·문서·간단한 웹페이지 작업엔 충분합니다. 결과가 마음에 안 들거나 유난히 복잡한 작업(대규모 데이터 분석, 까다로운 코드 등)일 때만 <span class="ic-code">/model</span>로 Opus를 시도해 보세요.</p></div></div>
+
+        <div class="note info"><span class="ic">ℹ️</span><div><b>그 밖에 최근 추가된 기능들 (참고만 하세요)</b><p>몰라도 쓰는 데 지장 없지만, 궁금하다면 살짝 알아두세요.<br/>
+        · 지금 모델이 응답을 못 주면 자동으로 대체 모델로 넘어가는 <b>폴백(fallback)</b> 기능<br/>
+        · 다른 사람이 만든 도구를 설치해 쓸 수 있는 <b>커뮤니티 플러그인 마켓플레이스</b><br/>
+        · 보조 에이전트를 여러 개 굴릴 때 각각 얼마나 썼는지 보여주는 <b>에이전트별 사용량 표시</b><br/>
+        · "이 폴더에선 이 명령만 허용" 식으로 더 세밀하게 정할 수 있는 <b>권한 세부 설정</b><br/>
+        · 입력창에 <span class="ic-code">:</span>를 치면 이모지 자동완성, 대화 이어하기(<span class="ic-code">-c</span>/<span class="ic-code">-r</span>)와 Windows 환경 안정성 개선 같은 자잘한 편의 업데이트</p></div></div>
       </section>
 
       <section id="u2">
@@ -956,6 +979,9 @@ gh auth login                 # 브라우저로 GitHub 로그인 (화살표로 G
           <li><strong>기존 프로젝트 개선</strong> — 예전에 만든(또는 남이 만든) 폴더에서 <span class="ic-code">/init</span> 실행 → "이 프로젝트 구조를 설명해 줘" → "여기에 ○○ 기능을 추가해 줘" 순서로 접근해요.</li>
           <li><strong>반복 업무 자동화</strong> — "매주 하는 이 작업(설명)을 스크립트로 만들어서, 더블클릭 한 번에 되게 해 줘." 정기 업무일수록 자동화 효과가 커요.</li>
           <li><strong>배포까지</strong> — 완성물을 "GitHub Pages로 배포해 줘"라고 하면 주소(URL)가 생겨서 누구에게나 공유할 수 있어요.</li>
+          <li><strong>일을 알아서 나눠 맡기기 — 서브에이전트</strong> — "이 폴더 전체를 검토하고 보고서로 정리해 줘"처럼 큰 일을 시키면, 클로드가 뒤에서 스스로 여러 개의 "보조 에이전트"를 불러 작업을 쪼개 맡기기도 해요. 최근에는 이 보조 에이전트가 필요하면 또 다른 보조를 부르는 것까지(최대 3단계) 가능해졌어요. 여러분은 그냥 결과만 받아보면 됩니다.</li>
+          <li><strong>폰에서 시작해서 PC가 대신 일하게 하기 — Dispatch (연구 프리뷰)</strong> — 외출 중에 아이디어가 떠올랐다면, 폰의 클로드 앱에서 프롬프트만 보내도 켜 둔 PC의 클로드 코드가 대신 실행돼 결과를 만들어 둬요. 지금은 Pro/Max 이용자 대상 연구 프리뷰이고, PC에 클로드 데스크탑 앱이 켜져 있어야 동작해요.</li>
+          <li><strong>화면까지 직접 조작하기 (연구 프리뷰)</strong> — 터미널의 클로드가 실제 화면에 떠 있는 다른 프로그램(엑셀·브라우저 등)을 마우스·키보드로 직접 조작해 처리해 주는 기능도 연구 프리뷰로 넓어지고 있어요. 아직 베타라 모든 환경에서 되는 건 아니에요.</li>
         </ul>
 
         <div class="note tip"><span class="ic">💡</span><div><b>막힐 때 만능 질문</b><p>"내가 (직업/상황)인데, 너랑 같이 하면 좋을 일 5가지만 추천해 줘. 난이도 쉬운 것부터." — 클로드가 여러분의 폴더와 상황을 보고 맞춤 제안을 해 줘요. 다음 프로젝트는 여기서 시작하세요.</p></div></div>
